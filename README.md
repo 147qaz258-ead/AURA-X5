@@ -79,8 +79,13 @@ aura_x5/
 
 ## Hardware Editions Supported
 
-1. **V2 HDMI + Solderless Edition (Fastest Demo & 60 FPS UI)** — Releases 100% of the RDK X5 40-pin header for direct female-to-female DuPont wiring of EC11 encoder, Kill-Switch, DPDT privacy switch, HLK-LD2410C mmWave radar, I2C sensors, and 5V cooling fan, paired with Chromium kiosk 60 FPS HDMI UI (`docs/03_hdmi_solderless_guide.md`).
-2. **V1 Custom Carrier HAT (`aura_x5_hat`) + 3.5" SPI Touch + 3D Enclosure** — Complete 2-layer KiCad 9.0.7 PCB (32 parts, 36 nets, 0 DRC errors, Gerber & JLCPCB BOM ready) + 3 watertight CadQuery STL enclosure parts (`docs/02_manufacturing_and_assembly.md`).
+1. **Embodied Dual-Eye Companion Prototype (Live Physical Hardware)** — 3D-printed expressive robot head with dual glowing eye displays driven by RDK X5 + dual Espressif ESP32 + Arduino Uno + on-board I2S audio/mic (`docs/evidence/stage1/02a_rdk_x5_hardware_bringup.jpg`, `02b_embodied_dual_eye_prototype.jpg`).
+2. **V2 HDMI + Solderless Edition (Fastest Demo & 60 FPS UI)** — Releases 100% of the RDK X5 40-pin header for direct female-to-female DuPont wiring of EC11 encoder, Kill-Switch, DPDT privacy switch, HLK-LD2410C mmWave radar, I2C sensors, and 5V cooling fan, paired with Chromium kiosk 60 FPS HDMI UI (`docs/03_hdmi_solderless_guide.md`).
+3. **V1 Custom Carrier HAT (`aura_x5_hat`) + 3.5" SPI Touch + 3D Enclosure** — Complete 2-layer KiCad 9.0.7 PCB (32 parts, 36 nets, 0 DRC errors, Gerber & JLCPCB BOM ready) + 3 watertight CadQuery STL enclosure parts (`docs/02_manufacturing_and_assembly.md`).
+
+| Live RDK X5 Bring-Up | Live 3D-Printed Embodied Dual-Eye Prototype |
+|---|---|
+| ![RDK X5 Hardware](./docs/evidence/stage1/02a_rdk_x5_hardware_bringup.jpg) | ![Embodied Dual-Eye Prototype](./docs/evidence/stage1/02b_embodied_dual_eye_prototype.jpg) |
 
 ---
 

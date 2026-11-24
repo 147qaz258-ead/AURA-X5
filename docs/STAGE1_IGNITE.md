@@ -31,8 +31,14 @@ arecord -D plughw:1,0 -f S16_LE -r 16000 -c 1 -d 1 -t raw
 - **Active Interfaces Verified:** I2S Audio (`card 0` & `card 1`), SPI (`/dev/spidev1.0`, `/dev/spidev1.1`), I2C (`/dev/i2c-5`), UART (`/dev/ttyS1`), USB peripherals (`Arduino Uno Rev3` & dual `Espressif USB JTAG/serial` devices).
 
 ### Verified Evidence
+- Live RDK X5 hardware bring-up photo (powered on, green LED, 40-pin GPIO harness, dual USB peripherals & cooling fan): [`docs/evidence/stage1/02a_rdk_x5_hardware_bringup.jpg`](./evidence/stage1/02a_rdk_x5_hardware_bringup.jpg)
+- Live 3D-printed embodied dual-eye robot head prototype (active glowing eyes driven via RDK X5 + dual Espressif ESP32 & Arduino Uno): [`docs/evidence/stage1/02b_embodied_dual_eye_prototype.jpg`](./evidence/stage1/02b_embodied_dual_eye_prototype.jpg)
 - Live I2S microphone waveform + hardware interface log: [`docs/evidence/stage1/02_sensor_mic_i2s.png`](./evidence/stage1/02_sensor_mic_i2s.png)
 - Verbatim hardware interface log: [`docs/evidence/stage1/sensor_peripherals.log`](./evidence/stage1/sensor_peripherals.log)
+
+![Live RDK X5 Hardware Bring-Up](./evidence/stage1/02a_rdk_x5_hardware_bringup.jpg)
+
+![Live 3D-Printed Embodied Dual-Eye Robot Prototype](./evidence/stage1/02b_embodied_dual_eye_prototype.jpg)
 
 ![Stage 1 Sensor and I2S Microphone Evidence](./evidence/stage1/02_sensor_mic_i2s.png)
 
