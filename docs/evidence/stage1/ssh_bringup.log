@@ -1,0 +1,22 @@
+$ uname -a
+Linux ubuntu 6.1.83 #1 SMP PREEMPT Wed Apr  8 21:09:59 CST 2026 aarch64 aarch64 aarch64 GNU/Linux
+$ cat /etc/version && grep PRETTY_NAME /etc/os-release
+3.5.0
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+$ lsblk -o NAME,SIZE,TYPE,MOUNTPOINT
+NAME         SIZE TYPE MOUNTPOINT
+mtdblock0      7M disk
+mtdblock1    1.5M disk
+mmcblk1     14.8G disk
+|-mmcblk1p1  256M part /boot/config
+`-mmcblk1p2 14.6G part /
+$ ping -c 2 github.com
+PING github.com (20.247.166.64) 56(84) bytes of data.
+64 bytes from 20.247.166.64 (20.247.166.64): icmp_seq=1 ttl=110 time=122 ms
+--- github.com ping statistics ---
+2 packets transmitted, 1 received, 50% packet loss, time 1001ms
+rtt min/avg/max/mdev = 121.686/121.686/121.686/0.000 ms
+$ hrut_somstatus
+temperature-->  DDR: 45.5 C  |  BPU: 44.3 C  |  CPU: 44.2 C
+cpu frequency-->  cpu0..cpu7: 300 - 1500 MHz (8-Core Cortex-A55)
+bpu status information---->  bpu0: min=500 MHz, cur=1000 MHz, max=1000 MHz, ratio=0%

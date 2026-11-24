@@ -11,8 +11,8 @@
 | Phase | Target Window | Milestone Goal | Status |
 |---|---|---|---|
 | **Pre-Work (M0–M2)** | Nov 13 – Nov 22, 2026 | Host observer validation (12 FPS 20-min 0% drop), 640-tile OCR probe, EVT-B KiCad PCB (DRC=0), CadQuery 3D enclosure, RDK X5 `hbm_runtime` BPU bring-up, V2 HDMI 60 FPS UI | **Completed** |
-| **Stage 1 — Ignite** | Nov 23 – Nov 24, 2026 | Capture & organize Stage 1 bring-up evidence (RDK Studio flash + SSH screenshot, peripheral proof, on-device AI output), publish personal GitHub repo & initial Showcase PR | **In Progress** |
-| **Stage 2 — Build** | Nov 23 – Nov 26, 2026 | Finalize `PROPOSAL.md`, `ARCHITECTURE.md` (with ROS 2 node graph & compute plan), `ENGINEERING_PLAN.md` (BOM + Top-5 risks), update Discord & Showcase PR to Stage 2 | **In Progress (Due Nov 26)** |
+| **Stage 1 — Ignite** | Nov 23 – Nov 24, 2026 | Capture & organize Stage 1 bring-up evidence (RDK Studio + SSH, ES8326 I2S Mic + buses, YOLO11n BPU detection), publish personal GitHub repo & Showcase PR | **Completed (Nov 24)** |
+| **Stage 2 — Build** | Nov 23 – Nov 26, 2026 | Finalize `PROPOSAL.md`, `ARCHITECTURE.md` (with ROS 2 node graph & compute plan), `ENGINEERING_PLAN.md` (BOM + Top-5 risks), update Discord & Showcase PR #15 | **Submitted (PR #15)** |
 | **Stage 3A — Integration** | Nov 27 – Dec 05, 2026 | Deploy & verify `aura_x5_ros` ROS 2 nodes on RDK X5, integrate continuous BPU inference + concurrent UI/sensor pipeline, run USB-C HID physical approval + Kill-Switch HIL tests | **Planned** |
 | **Stage 3B — Benchmarking** | Dec 06 – Dec 10, 2026 | Run ≥30s continuous dual-workload BPU benchmark (`benchmark_bpu_concurrent.py`), collect FPS/latency/CPU/BPU/thermal logs, execute all 8 steps of `physical_test_plan.csv` | **Planned** |
 | **Stage 3C — Final Launch** | Dec 11 – Dec 15, 2026 | Record & edit 3–7 min 1080p demo video (≥30s uncut continuous AI operation + Kill-Switch demo), polish final docs, publish 9+ RDK Advocator external posts, submit final Stage 3 Showcase PR | **Planned (Hard Stop Dec 15)** |

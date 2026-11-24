@@ -1,0 +1,118 @@
+[BPU_PLAT]BPU Platform Version(1.3.6)! soc info(x5)
+[HBRT] set log level as 0. version = 3.15.55.0
+[DNN] Runtime version = 1.24.5_(3.15.55 HBRT)
+[A][DNN][packed_model.cpp:247][Model](2026-11-24,22:37:23.628.492) [HorizonRT] The model builder version = 1.24.3
+=== Model Name List ===
+['yolo11n_detect_bayese_640x640_nv12']
+
+=== Model Count ===
+1
+
+=== Input Counts ===
+yolo11n_detect_bayese_640x640_nv12: 1
+
+=== Input Names ===
+yolo11n_detect_bayese_640x640_nv12:
+  - images
+
+=== Input Tensor Shapes ===
+yolo11n_detect_bayese_640x640_nv12:
+  images -> shape: [1, 3, 640, 640]
+
+=== Input Tensor Types ===
+yolo11n_detect_bayese_640x640_nv12:
+  images -> dtype: NV12
+
+=== Input Quantization Info ===
+yolo11n_detect_bayese_640x640_nv12:
+  images:
+    quanti_type: NONE
+    quantize_axis: 0
+    scale_data: []
+    zero_point_data: []
+
+=== Input Tensor Stride ===
+yolo11n_detect_bayese_640x640_nv12:
+  images -> stride: [0, 0, 0, 0]
+
+================ OUTPUT TESTS ================
+
+=== Output Counts ===
+yolo11n_detect_bayese_640x640_nv12: 6
+
+=== Output Names ===
+yolo11n_detect_bayese_640x640_nv12:
+  - output0
+  - 480
+  - 494
+  - 502
+  - 516
+  - 524
+
+=== Output Tensor Shapes ===
+yolo11n_detect_bayese_640x640_nv12:
+  524 -> shape: [1, 20, 20, 64]
+  516 -> shape: [1, 20, 20, 80]
+  502 -> shape: [1, 40, 40, 64]
+  494 -> shape: [1, 40, 40, 80]
+  480 -> shape: [1, 80, 80, 64]
+  output0 -> shape: [1, 80, 80, 80]
+
+=== Output Tensor Types ===
+yolo11n_detect_bayese_640x640_nv12:
+  524 -> dtype: F32
+  516 -> dtype: F32
+  502 -> dtype: F32
+  494 -> dtype: F32
+  480 -> dtype: F32
+  output0 -> dtype: F32
+
+=== Output Quantization Info ===
+yolo11n_detect_bayese_640x640_nv12:
+  524:
+    quanti_type: NONE
+    quantize_axis: 0
+    scale_data: []
+    zero_point_data: []
+  516:
+    quanti_type: NONE
+    quantize_axis: 0
+    scale_data: []
+    zero_point_data: []
+  502:
+    quanti_type: NONE
+    quantize_axis: 0
+    scale_data: []
+    zero_point_data: []
+  494:
+    quanti_type: NONE
+    quantize_axis: 0
+    scale_data: []
+    zero_point_data: []
+  480:
+    quanti_type: NONE
+    quantize_axis: 0
+    scale_data: []
+    zero_point_data: []
+  output0:
+    quanti_type: NONE
+    quantize_axis: 0
+    scale_data: []
+    zero_point_data: []
+
+=== Output Tensor Stride ===
+yolo11n_detect_bayese_640x640_nv12:
+  524 -> stride: [102400, 5120, 256, 4]
+  516 -> stride: [128000, 6400, 320, 4]
+  502 -> stride: [409600, 10240, 256, 4]
+  494 -> stride: [512000, 12800, 320, 4]
+  480 -> stride: [1638400, 20480, 256, 4]
+  output0 -> stride: [2048000, 25600, 320, 4]
+
+=== Scheduling Parameters ===
+yolo11n_detect_bayese_640x640_nv12:
+  priority    : 0
+  customId    : 0
+  bpu_cores   : [0]
+  deviceId    : 0
+[Saved] Result saved to: /tmp/aura_stage1_yolo11.jpg
