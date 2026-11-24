@@ -1,0 +1,25 @@
+Category,Designator,Qty,Name,Package_Spec,LCSC_Code,Required,Notes
+Board_SMD,U1,1,AMS1117-3.3 3.3V 1A LDO,SOT-223-3,C6186,Yes,Peripheral 3.3V regulator
+Board_SMD,F1,1,SMD0805-110 PTC Resettable Fuse,0805,C70062,Yes,5V input overcurrent protection
+Board_SMD,D1,1,SMBJ5.0A TVS Diode,SMB,C173475,Yes,5V surge/ESD protection
+Board_SMD,Q1 Q2,2,MMBT3904 NPN Transistor,SOT-23-3,C20526,Yes,Fan & Buzzer low-side PWM driver
+Board_SMD,Q3,1,2N7002 N-MOSFET,SOT-23-3,C8545,Yes,WS2812B 3.3V->5V level shifter
+Board_SMD,D2,1,Red LED 0603,0603,C2286,Yes,Hardware privacy indicator
+Board_SMD,D3,1,1N4148WS Switching Diode,SOD-323,C2128,Yes,Fan flyback protection
+Board_SMD,R1 R3 R4 R8,4,1k Ohm 1% Resistor,0603,C21190,Yes,Buy 10+ spares
+Board_SMD,R2 R6 R7,3,10k Ohm 1% Resistor,0603,C25804,Yes,Pull-up/debounce (buy 10+ spares)
+Board_SMD,C1 C2,2,10uF 25V Ceramic Cap,0805,C15850,Yes,LDO input/output bulk cap
+Board_SMD,C3 C4 C5 C6,4,100nF 50V Ceramic Cap,0603,C14663,Yes,Decoupling & RC debounce
+Board_THT,J1,1,2x20P 2.54mm Female Stacking Header,2.54mm 2x20P,-,Yes,Connects to RDK X5 40-pin GPIO
+Board_THT,J2,1,2x13P 2.54mm Pin Header + 26P Ribbon Cable,2.54mm 2x13P,-,Yes,Connects to 3.5inch Touch Display
+Board_THT,J3..J11,1,Breakaway 1x40P & 2x40P 2.54mm Male Pin Headers,2.54mm,-,Yes,Cut to 2x3 / 1x2 / 1x3 / 1x4 / 1x5 / 1x7
+Panel_HW,SW_PRIV,1,6-Pin DPDT Toggle/Slide Switch,DPDT 6P,-,Yes,Hardware privacy power cut
+Panel_HW,ENC1,1,EC11 Rotary Encoder with Push Switch,EC11 5P,-,Yes,Physical approve/scroll wheel
+Panel_HW,BTN_KILL,1,12mm Momentary Push Button,2P NO,-,Yes,Emergency Kill-Switch
+Panel_HW,FAN1,1,30x30x7mm 5V Cooling Fan,5V 2-wire,-,Yes,RDK X5 BPU active cooling
+Panel_HW,BUZ1,1,5V Passive/Active Buzzer,5V 2-pin,-,Yes,Haptic/audio alert
+Panel_HW,SCREWS,1,M2.5 Brass Standoffs + M3 Screws Assortment,M2.5/M3,-,Yes,Mount RDK X5 & front console
+Module_Opt,RADAR,1,HLK-LD2410C 24GHz mmWave Radar,UART 5V,-,Recommended,User presence detection
+Module_Opt,LED_RING,1,8-LED WS2812B 5V Ring/Strip,5V 3-pin,-,Optional,Agent status light ring
+Module_Opt,AUDIO,1,INMP441 I2S Mic + MAX98357A Amp + 4Ohm Speaker,I2S,-,Optional,Voice wake/TTS (gated by privacy switch)
+Module_Opt,I2C_SENS,1,VL53L1X / SHT40 / INA219 Modules,I2C 3.3V,-,Optional,Gesture / Temp-Hum / Power telemetry

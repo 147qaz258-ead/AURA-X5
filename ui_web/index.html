@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AURA-X5 · 具身主动式桌面智能体</title>
+  <style>
+    :root {
+      --bg: #070b14;
+      --panel: rgba(18, 25, 42, 0.78);
+      --border: rgba(96, 165, 250, 0.22);
+      --accent: #38bdf8;
+      --green: #22c55e;
+      --red: #ef4444;
+      --amber: #f59e0b;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: radial-gradient(circle at 20% 20%, #0f172a 0%, var(--bg) 65%);
+      color: var(--text);
+      font-family: "Microsoft YaHei", "Noto Sans CJK SC", system-ui, sans-serif;
+      height: 100vh;
+      overflow: hidden;
+      display: grid;
+      grid-template-rows: 64px 1fr 76px;
+      padding: 18px 24px;
+      gap: 16px;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 0 22px;
+      backdrop-filter: blur(12px);
+    }
+    .brand { display: flex; align-items: center; gap: 12px; font-size: 20px; font-weight: 700; letter-spacing: 0.5px; }
+    .dot { width: 12px; height: 12px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 12px var(--accent); transition: 0.25s; }
+    .pills { display: flex; gap: 10px; }
+    .pill {
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      background: rgba(51, 65, 85, 0.55);
+      border: 1px solid rgba(148, 163, 184, 0.25);
+    }
+    .pill.ok { background: rgba(22, 163, 74, 0.25); border-color: rgba(34, 197, 94, 0.5); color: #86efac; }
+    .pill.warn { background: rgba(239, 68, 68, 0.22); border-color: rgba(239, 68, 68, 0.5); color: #fca5a5; }
+    main {
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      gap: 18px;
+      min-height: 0;
+    }
+    .avatar-card, .agent-card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 24px;
+      backdrop-filter: blur(14px);
+      display: flex;
+      flex-direction: column;
+    }
+    .avatar-card { align-items: center; justify-content: center; gap: 16px; }
+    canvas#auraCanvas { width: 260px; height: 260px; }
+    .persona-state { font-size: 16px; font-weight: 600; color: var(--accent); letter-spacing: 1px; }
+    .agent-card { justify-content: space-between; transition: border-color 0.25s, box-shadow 0.25s; }
+    .agent-card.approved { border-color: var(--green); box-shadow: 0 0 28px rgba(34, 197, 94, 0.2); }
+    .agent-card.rejected { border-color: var(--red); box-shadow: 0 0 28px rgba(239, 68, 68, 0.2); }
+    .agent-card.pending  { border-color: var(--amber); box-shadow: 0 0 28px rgba(245, 158, 11, 0.16); }
+    .card-meta { display: flex; justify-content: space-between; color: var(--muted); font-size: 14px; }
+    .card-title { font-size: 28px; font-weight: 700; color: #e0f2fe; margin: 12px 0; }
+    .card-body { font-size: 18px; line-height: 1.6; color: #cbd5e1; flex: 1; }
+    .actions { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 18px; }
+    button {
+      border: none;
+      border-radius: 14px;
+      padding: 16px;
+      font-size: 18px;
+      font-weight: 700;
+      cursor: pointer;
+      color: #fff;
+      transition: transform 0.12s, filter 0.15s;
+    }
+    button:active { transform: scale(0.97); }
+    .btn-approve { background: linear-gradient(135deg, #16a34a, #15803d); }
+    .btn-reject  { background: linear-gradient(135deg, #dc2626, #b91c1c); }
+    footer {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+    .tele {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 12px 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 4px;
+    }
+    .tele-k { font-size: 12px; color: var(--muted); }
+    .tele-v { font-size: 15px; font-weight: 600; color: var(--text); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="dot" id="statusDot"></div>
+      <span>AURA-X5 · 具身主动式 AI 协作者</span>
+    </div>
+    <div class="pills">
+      <div class="pill" id="pillPC">PC: WAIT</div>
+      <div class="pill ok" id="pillBPU">BPU: 10 TOPS</div>
+      <div class="pill" id="pillPriv">MIC: CUT</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="avatar-card">
+      <canvas id="auraCanvas" width="260" height="260"></canvas>
+      <div class="persona-state" id="personaLabel">STANDBY · 持续感知中</div>
+    </section>
+
+    <section class="agent-card" id="agentCard">
+      <div>
+        <div class="card-meta">
+          <span id="frameMeta">Frame: idle</span>
+          <span id="statusBanner">READY</span>
+        </div>
+        <div class="card-title" id="propTitle">等待 PC 桌面上下文…</div>
+        <div class="card-body" id="propSummary">
+          AURA-X5 已就绪。可通过 EC11 旋钮（按下批准）、实体 Kill-Switch（拒绝/急停）或键盘 Enter / Esc 交互。
+        </div>
+      </div>
+      <div class="actions">
+        <button class="btn-approve" onclick="sendDecision('approve')">批准执行 [Enter / EC11]</button>
+        <button class="btn-reject" onclick="sendDecision('reject')">拒绝 / 急停 [Esc / Kill]</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="tele"><div class="tele-k">毫米波存在雷达 (LD2410C)</div><div class="tele-v" id="telRadar">未接入</div></div>
+    <div class="tele"><div class="tele-k">BPU 端侧推理延迟</div><div class="tele-v" id="telBpu">-- ms</div></div>
+    <div class="tele"><div class="tele-k">USB-C 硬件键鼠 (HID)</div><div class="tele-v" id="telHid">STANDBY</div></div>
+    <div class="tele"><div class="tele-k">环境温湿度 (I2C)</div><div class="tele-v" id="telEnv">未接入</div></div>
+  </footer>
+
+  <script>
+    const canvas = document.getElementById('auraCanvas');
+    const ctx = canvas.getContext('2d');
+    let mood = 'standby'; // standby | pending | approved | rejected
+    let t = 0;
+
+    function moodColor() {
+      if (mood === 'approved') return '#22c55e';
+      if (mood === 'rejected') return '#ef4444';
+      if (mood === 'pending')  return '#f59e0b';
+      return '#38bdf8';
+    }
+
+    function drawAvatar() {
+      t += 0.04;
+      ctx.clearRect(0, 0, 260, 260);
+      const col = moodColor();
+      const pulse = Math.sin(t) * 5;
+
+      // Outer breathing halo
+      ctx.beginPath();
+      ctx.arc(130, 130, 94 + pulse, 0, Math.PI * 2);
+      ctx.strokeStyle = col;
+      ctx.lineWidth = 4;
+      ctx.shadowBlur = 22;
+      ctx.shadowColor = col;
+      ctx.stroke();
+      ctx.shadowBlur = 0;
+
+      // Inner dark ring
+      ctx.beginPath();
+      ctx.arc(130, 130, 76, 0, Math.PI * 2);
+      ctx.fillStyle = '#0f172a';
+      ctx.fill();
+
+      // Natural blinking eyes
+      const blink = (Math.sin(t * 0.45) > 0.96) ? 0.15 : 1.0;
+      const eyeH = 34 * blink;
+      const eyeY = 130 - eyeH / 2;
+      ctx.fillStyle = '#e0f2fe';
+      ctx.beginPath();
+      ctx.roundRect(88, eyeY, 24, eyeH, 10);
+      ctx.roundRect(148, eyeY, 24, eyeH, 10);
+      ctx.fill();
+
+      requestAnimationFrame(drawAvatar);
+    }
+    drawAvatar();
+
+    let ws;
+    function connectWS() {
+      const host = location.hostname || '127.0.0.1';
+      ws = new WebSocket(`ws://${host}:8765`);
+      ws.onopen = () => {
+        document.getElementById('pillPC').textContent = 'WS: LIVE';
+        document.getElementById('pillPC').className = 'pill ok';
+      };
+      ws.onmessage = (ev) => {
+        const d = JSON.parse(ev.data);
+        if (d.type === 'ui_state') {
+          document.getElementById('propTitle').textContent = d.proposal_title || '';
+          document.getElementById('propSummary').textContent = d.proposal_summary || '';
+          document.getElementById('frameMeta').textContent = `Frame: ${d.evidence_frame_id || '-'}`;
+          document.getElementById('statusBanner').textContent = d.status_banner || 'READY';
+          if (d.bpu_ms) document.getElementById('telBpu').textContent = `${d.bpu_ms} ms`;
+          if (d.connected_pc) {
+            document.getElementById('pillPC').textContent = 'PC: LINK';
+            document.getElementById('pillPC').className = 'pill ok';
+          }
+          const card = document.getElementById('agentCard');
+          card.className = 'agent-card';
+          if ((d.status_banner || '').includes('APPROVED')) { mood = 'approved'; card.classList.add('approved'); }
+          else if ((d.status_banner || '').includes('REJECTED')) { mood = 'rejected'; card.classList.add('rejected'); }
+          else if ((d.status_banner || '').includes('TAP') || (d.status_banner || '').includes('PENDING')) { mood = 'pending'; card.classList.add('pending'); }
+          else { mood = 'standby'; }
+        }
+      };
+      ws.onclose = () => {
+        document.getElementById('pillPC').textContent = 'WS: RETRY';
+        document.getElementById('pillPC').className = 'pill warn';
+        setTimeout(connectWS, 2000);
+      };
+    }
+    connectWS();
+
+    function sendDecision(decision) {
+      if (ws && ws.readyState === WebSocket.OPEN) {
+        ws.send(JSON.stringify({ type: 'ui_decision', decision }));
+      }
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') sendDecision('approve');
+      if (e.key === 'Escape') sendDecision('reject');
+    });
+  </script>
+</body>
+</html>

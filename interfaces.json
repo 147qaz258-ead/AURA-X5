@@ -1,0 +1,119 @@
+{
+  "project": "AURA-X5",
+  "version": "1.1.0-EVT-A",
+  "description": "PC-Tethered Proactive Embodied AI Agent Hardware powered by D-Robotics RDK X5 (10 TOPS BPU) + 3.5inch 480x320 XPT2046 Touch Display",
+  "compute_module": {
+    "name": "D-Robotics RDK X5",
+    "dimensions_mm": { "length": 85.0, "width": 56.0, "height": 20.0 },
+    "mounting_holes_mm": {
+      "diameter": 2.75,
+      "pad_diameter": 5.8,
+      "positions_from_bottom_left": [
+        { "id": "MH1", "x": 3.5, "y": 3.5 },
+        { "id": "MH2", "x": 61.5, "y": 3.5 },
+        { "id": "MH3", "x": 3.5, "y": 52.5 },
+        { "id": "MH4", "x": 61.5, "y": 52.5 }
+      ],
+      "grounded": false
+    },
+    "bpu_tops_int8": 10,
+    "gpio_logic_v": 3.3,
+    "usb_otg_port": "USB 2.0 Type-C (Device/Gadget: RNDIS+ECM + HID Keyboard/Mouse)",
+    "power_input": "USB-C 5V/5A"
+  },
+  "display_module": {
+    "name": "3.5inch RPi Display (MPI3501 / ILI9486 + XPT2046)",
+    "resolution": { "width": 480, "height": 320 },
+    "dimensions_mm": { "length": 85.42, "width": 55.60, "active_length": 73.44, "active_width": 48.96 },
+    "header": "26-pin (2x13) 2.54mm female header (maps to RPi/RDK Pins 1-26)",
+    "driver_ic": "ILI9486",
+    "touch_ic": "XPT2046 (4-wire resistive SPI)",
+    "power": "5V ~130mA"
+  },
+  "carrier_pcb": {
+    "name": "aura_x5_hat",
+    "board_size_mm": { "width": 85.0, "height": 56.0, "thickness": 1.6 },
+    "layers": 2,
+    "copper_oz": 1.0,
+    "finish": "HASL_LeadFree",
+    "min_trace_mm": 0.2,
+    "min_clearance_mm": 0.2,
+    "power_rails": {
+      "VBUS_5V": { "nominal_v": 5.0, "max_a": 3.0, "protection": "PTC_3A + TVS_SMBJ5.0A" },
+      "VCC_3V3_EXT": { "nominal_v": 3.3, "max_a": 1.0, "regulator": "AP2112K-3.3 / AMS1117-3.3" },
+      "V_PRIVACY_3V3": { "nominal_v": 3.3, "gated_by": "SW_PRIVACY_DPDT" }
+    }
+  },
+  "pin_map_40pin": {
+    "I2C_BUS": {
+      "bus": "i2c-5",
+      "sda_pin": 3,
+      "scl_pin": 5,
+      "devices": [
+        { "name": "VL53L1X_ToF", "addr": "0x29", "purpose": "Proximity & desktop gesture" },
+        { "name": "SHT40", "addr": "0x44", "purpose": "Ambient temp & humidity" },
+        { "name": "INA219", "addr": "0x40", "purpose": "System power telemetry" }
+      ]
+    },
+    "SPI_DISPLAY_AND_TOUCH": {
+      "bus": "spidev0",
+      "mosi_pin": 19,
+      "miso_pin": 21,
+      "sclk_pin": 23,
+      "lcd_cs_pin": 24,
+      "tp_cs_pin": 26,
+      "lcd_rs_dc_pin": 18,
+      "lcd_rst_pin": 22,
+      "tp_irq_pin": 11,
+      "device": "3.5inch RPi Display (ILI9486 + XPT2046)"
+    },
+    "UART_RADAR": {
+      "bus": "/dev/ttyS1",
+      "tx_pin": 8,
+      "rx_pin": 10,
+      "baud": 256000,
+      "device": "HLK-LD2410C 24GHz mmWave Presence Radar"
+    },
+    "I2S_AUDIO": {
+      "bclk_pin": 12,
+      "lrclk_pin": 35,
+      "din_pin": 38,
+      "dout_pin": 40,
+      "devices": ["INMP441 MEMS Mic (gated by V_PRIVACY_3V3)", "MAX98357A Class-D Amp"]
+    },
+    "USER_IO": {
+      "kill_switch_btn_pin": 7,
+      "ec11_a_pin": 13,
+      "ec11_b_pin": 15,
+      "ec11_sw_pin": 16,
+      "privacy_sense_pin": 29,
+      "buzzer_pwm_pin": 31,
+      "fan_pwm_pin": 32,
+      "ws2812_data_pin": 33,
+      "status_led_pin": 36
+    }
+  },
+  "mechanical": {
+    "enclosure_style": "15deg_tilted_desktop_console_for_3.5inch_touch",
+    "material": "PETG / Matte_PLA_CF",
+    "wall_thickness_mm": 2.4,
+    "clearance_mm": 0.35,
+    "cooling": {
+      "fan_mm": "30x30x7mm 5V PWM",
+      "airflow": "bottom_intake_top_rear_exhaust"
+    }
+  },
+  "software_protocol": {
+    "transport": "USB-C RNDIS/ECM (10.55.0.1 <-> 10.55.0.2) or LAN WebSocket",
+    "ws_port": 8765,
+    "hid_devices": {
+      "keyboard": "/dev/hidg0",
+      "mouse": "/dev/hidg1"
+    },
+    "safety_invariants": [
+      "No HID injection without explicit physical button/encoder/touch approval OR signed user session token",
+      "Hardware privacy switch physically cuts mic & camera power rail",
+      "Kill-Switch button immediately aborts active HID macro and clears action queue"
+    ]
+  }
+}

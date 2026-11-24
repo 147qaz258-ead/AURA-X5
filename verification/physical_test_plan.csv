@@ -1,0 +1,9 @@
+Step,Stage,Test_Item,Procedure,Pass_Criteria,Status
+1,PCB_Incoming,Visual_and_Short_Check,"Inspect aura_x5_hat PCB; measure resistance VBUS_5V-GND, +3V3_EXT-GND, V_PRIVACY_3V3-GND","No solder bridges; resistance > 10 kOhm",NOT_RUN
+2,Power_Bringup,Current_Limited_5V_Test,"Apply 5.0V with 0.5A current limit to HAT alone (no RDK X5)","+3V3_EXT = 3.30V +/- 3%; quiescent current < 15 mA",NOT_RUN
+3,Privacy_Switch,Hardware_Privacy_Cut,"Toggle DPDT privacy switch OFF/ON without software running","V_PRIVACY_3V3 drops to 0.0V when OFF; Red LED turns OFF; PRIV_SENSE toggles",NOT_RUN
+4,Integration,RDK_X5_and_USB_Gadget,"Stack HAT on RDK X5; connect USB-C OTG to Windows PC; run usb_gadget_setup.sh","PC enumerates USB ECM/RNDIS (10.55.0.2) + HID Keyboard + HID Mouse",NOT_RUN
+5,Display_Touch,3.5inch_ILI9486_XPT2046,"Connect 26-pin 3.5inch RPi Display to J2; run SPI display & XPT2046 touch test","480x320 UI crisp; touch coordinates within +/- 5px of target",NOT_RUN
+6,Sensors,Radar_ToF_SHT40,"Run hal_devices.py sensor poll on RDK X5","LD2410C presence updates at >= 5Hz; I2C 0x29/0x44/0x40 ACK",NOT_RUN
+7,Safety_Gate,Physical_Approval_and_Kill,"Submit test proposal from PC; press Kill-Switch; then test EC11/Touch approval","No HID output before approval; Kill-Switch aborts mid-macro < 50ms",NOT_RUN
+8,Thermal_Burnin,24h_Load_and_BPU,"Run 10 TOPS BPU inference + 3.5inch screen + fan PWM for 24h in enclosure","No thermal throttling; BPU temp < 75C; zero dropped USB frames",NOT_RUN

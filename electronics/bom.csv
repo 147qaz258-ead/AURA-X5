@@ -1,0 +1,33 @@
+Reference,Value,MPN,Footprint,Description
+J1,RDK_X5_40PIN,Samtec_SSQ-120-03-G-D,Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical,2x20 2.54mm female stacking header for RDK X5
+J2,3.5_TFT_26PIN,PinHeader_2x13_2.54mm,Connector_PinHeader_2.54mm:PinHeader_2x13_P2.54mm_Vertical,2x13 2.54mm header for 3.5inch 480x320 ILI9486+XPT2046 Touch Display
+F1,PTC_3A,Bourns_MF-R300,Fuse:Fuse_Bourns_MF-R300,3A Resettable PTC Fuse
+D1,SMBJ5.0A,Littelfuse_SMBJ5.0A,Diode_THT:D_DO-41_SOD81_P5.08mm_Horizontal,5V TVS Surge/ESD Protection Diode
+U1,AMS1117-3.3,AMS1117-3.3,Package_TO_SOT_THT:TO-220-3_Vertical,Dedicated 3.3V 1A LDO Regulator for peripherals
+C1,10uF,Rubycon_10uF_25V,Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm,Decoupling capacitor
+C2,10uF,Rubycon_10uF_25V,Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm,Decoupling capacitor
+C3,100nF,KEMET_C315C104K5R5TA,Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm,Decoupling capacitor
+J3,PRIVACY_DPDT,PinHeader_2x03_2.54mm,Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical,2x3 header to front panel DPDT Privacy Kill-Switch
+R1,1k,MFR-25FBF52-1K,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,Through-hole resistor 0.25W 1%
+D2,PRIV_LED,Kingbright_WP710A10ID,LED_THT:LED_D3.0mm,Hardware privacy active indicator LED
+J4,I2C_BUS,JST_XH_4P,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,1x4 I2C bus header (VL53L1X + SHT40 + INA219)
+J5,RADAR_LD2410,PinHeader_1x04_2.54mm,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,1x4 UART header for HLK-LD2410C 24GHz mmWave Radar
+J6,I2S_AUDIO,PinHeader_1x07_2.54mm,Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical,1x7 I2S Audio header (Mic power gated by hardware privacy switch)
+J7,EC11_ENC,PinHeader_1x05_2.54mm,Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical,1x5 header for front EC11 rotary encoder
+R6,10k,MFR-25FBF52-10K,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,Through-hole resistor 0.25W 1%
+R7,10k,MFR-25FBF52-10K,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,Through-hole resistor 0.25W 1%
+C5,100nF,KEMET_C315C104K5R5TA,Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm,Decoupling capacitor
+C6,100nF,KEMET_C315C104K5R5TA,Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm,Decoupling capacitor
+J8,KILL_SW,PinHeader_1x02_2.54mm,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,1x2 header for physical Emergency Kill-Switch button
+R2,10k,MFR-25FBF52-10K,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,Through-hole resistor 0.25W 1%
+C4,100nF,KEMET_C315C104K5R5TA,Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm,Decoupling capacitor
+Q3,2N7000_LVL,onsemi_2N7000,Package_TO_SOT_THT:TO-92_Inline_Wide,MOSFET 3.3V->5V level shifter for WS2812B data
+R8,1k,MFR-25FBF52-1K,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,Through-hole resistor 0.25W 1%
+J9,WS2812_5V,PinHeader_1x03_2.54mm,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,1x3 5V header for 8x WS2812B status ring
+J10,FAN_5V,PinHeader_1x02_2.54mm,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,1x2 header for 30x30x7mm 5V PWM cooling fan
+R3,680R,MFR-25FBF52-680R,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,Through-hole resistor 0.25W 1%
+Q1,2N3904_FAN,onsemi_2N3904BU,Package_TO_SOT_THT:TO-92_Inline_Wide,NPN low-side PWM fan driver
+D3,1N4148_FAN,Vishay_1N4148,Diode_THT:D_DO-41_SOD81_P5.08mm_Horizontal,Flyback diode for cooling fan
+J11,BUZZER_5V,PinHeader_1x02_2.54mm,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,1x2 header for 5V haptic/alert buzzer
+R4,680R,MFR-25FBF52-680R,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,Through-hole resistor 0.25W 1%
+Q2,2N3904_BUZ,onsemi_2N3904BU,Package_TO_SOT_THT:TO-92_Inline_Wide,NPN low-side PWM buzzer driver

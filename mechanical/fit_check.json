@@ -1,0 +1,29 @@
+{
+  "base_shell": {
+    "watertight": true,
+    "volume_cm3": 72.77,
+    "bounds_mm": [
+      104.0,
+      114.0,
+      46.0
+    ]
+  },
+  "front_console_flat": {
+    "watertight": true,
+    "volume_cm3": 19.32,
+    "bounds_mm": [
+      104.0,
+      90.0,
+      4.0
+    ]
+  },
+  "encoder_knob": {
+    "watertight": true,
+    "volume_cm3": 5.99,
+    "bounds_mm": [
+      24.0,
+      23.99,
+      14.0
+    ]
+  }
+}

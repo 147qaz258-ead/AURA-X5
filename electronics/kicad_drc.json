@@ -1,0 +1,2621 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-18T01:01:23+0800",
+    "kicad_version": "9.0.7",
+    "schematic_parity": [],
+    "source": "aura_x5_hat.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J1 的PTH 焊盘 3 [I2C_SDA]",
+                    "pos": {
+                        "x": 10.922,
+                        "y": 5.334
+                    },
+                    "uuid": "0ac50697-4edf-5929-881c-3adf423ee672"
+                },
+                {
+                    "description": "过孔 [I2C_SDA] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 11.176,
+                        "y": 5.08
+                    },
+                    "uuid": "a89ef04f-704f-540c-af3d-8a6203dc2434"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "过孔 [I2C_SCL] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 13.208,
+                        "y": 5.08
+                    },
+                    "uuid": "54e33f5f-ef60-53e8-922d-0d6ad3f53f6b"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 5 [I2C_SCL]",
+                    "pos": {
+                        "x": 13.462,
+                        "y": 5.334
+                    },
+                    "uuid": "828958a7-8a2d-5414-8c22-5c937eb19df7"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J1 的PTH 焊盘 7 [KILL_SW]",
+                    "pos": {
+                        "x": 16.002,
+                        "y": 5.334
+                    },
+                    "uuid": "0eb2423e-89b1-57c5-93d7-5d5d42a9d7e5"
+                },
+                {
+                    "description": "过孔 [KILL_SW] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 15.748,
+                        "y": 5.08
+                    },
+                    "uuid": "997d0e70-5470-56f0-a75a-ad0b90e5fc3c"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔的位置相同",
+            "items": [
+                {
+                    "description": "过孔 [KILL_SW] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 39.624,
+                        "y": 47.244
+                    },
+                    "uuid": "57df7f0a-8460-55ce-a83b-846446e11eff"
+                },
+                {
+                    "description": "J8 的PTH 焊盘 2 [KILL_SW]",
+                    "pos": {
+                        "x": 39.624,
+                        "y": 47.244
+                    },
+                    "uuid": "eb9cf801-6755-5b51-b724-26e9fe3e107d"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "C4 的PTH 焊盘 1 [KILL_SW]",
+                    "pos": {
+                        "x": 49.022,
+                        "y": 41.148
+                    },
+                    "uuid": "386712f0-a5b2-5e27-a195-be4760241d18"
+                },
+                {
+                    "description": "过孔 [KILL_SW] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 48.768,
+                        "y": 41.148
+                    },
+                    "uuid": "7b7b6e56-fe43-58f0-a639-f0c1fe84621c"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "过孔 [UART_TX] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 15.748,
+                        "y": 3.048
+                    },
+                    "uuid": "404dd753-bad3-508f-924e-f74fd74d646b"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 8 [UART_TX]",
+                    "pos": {
+                        "x": 16.002,
+                        "y": 2.794
+                    },
+                    "uuid": "eb638eb0-dcde-5a17-965d-0f48cf79c4e9"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J1 的PTH 焊盘 10 [UART_RX]",
+                    "pos": {
+                        "x": 18.542,
+                        "y": 2.794
+                    },
+                    "uuid": "b28876b2-d395-5b31-bc3c-8b03d9302819"
+                },
+                {
+                    "description": "过孔 [UART_RX] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 18.288,
+                        "y": 3.048
+                    },
+                    "uuid": "da7b8174-b4b4-52f2-a498-35a8c008b601"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "过孔 [TP_IRQ] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 21.336,
+                        "y": 5.08
+                    },
+                    "uuid": "369efa45-3938-5c34-b676-2a9f69c58266"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 11 [TP_IRQ]",
+                    "pos": {
+                        "x": 21.082,
+                        "y": 5.334
+                    },
+                    "uuid": "426c3924-7cb6-53e8-bcfc-43edf32c3444"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J1 的PTH 焊盘 12 [I2S_BCLK]",
+                    "pos": {
+                        "x": 21.082,
+                        "y": 2.794
+                    },
+                    "uuid": "117d0c24-5d36-51c8-ab81-f2156e3267da"
+                },
+                {
+                    "description": "过孔 [I2S_BCLK] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 21.336,
+                        "y": 3.048
+                    },
+                    "uuid": "a5c6dc9e-7ca5-5f1a-8a5a-600a01757232"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "过孔 [EC11_A] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 23.876,
+                        "y": 5.08
+                    },
+                    "uuid": "11789905-9981-5fdf-9361-a86e0179c4e1"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 13 [EC11_A]",
+                    "pos": {
+                        "x": 23.622,
+                        "y": 5.334
+                    },
+                    "uuid": "782e6a7c-f4d2-50a8-91c2-047f62e23234"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "R6 的PTH 焊盘 2 [EC11_A]",
+                    "pos": {
+                        "x": 34.798,
+                        "y": 36.068
+                    },
+                    "uuid": "555dcdfc-8011-5f0c-9d8f-5a5b21f5e70d"
+                },
+                {
+                    "description": "过孔 [EC11_A] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 34.544,
+                        "y": 36.068
+                    },
+                    "uuid": "8e7e2de8-23c4-56ae-a31d-95e25ce2fee0"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J1 的PTH 焊盘 15 [EC11_B]",
+                    "pos": {
+                        "x": 26.162,
+                        "y": 5.334
+                    },
+                    "uuid": "4271a696-f389-543c-b6c6-b02f81dec3ce"
+                },
+                {
+                    "description": "过孔 [EC11_B] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 26.416,
+                        "y": 5.08
+                    },
+                    "uuid": "4c667c47-75d1-507b-ab27-893caaea5ebf"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "过孔 [EC11_SW] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 26.416,
+                        "y": 3.048
+                    },
+                    "uuid": "4c3698d3-0cbd-5ca7-9474-3bd9d88c1d47"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 16 [EC11_SW]",
+                    "pos": {
+                        "x": 26.162,
+                        "y": 2.794
+                    },
+                    "uuid": "c84ced19-36dd-5325-ab45-4fe3cedb7a45"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J1 的PTH 焊盘 18 [LCD_RS]",
+                    "pos": {
+                        "x": 28.702,
+                        "y": 2.794
+                    },
+                    "uuid": "8a541a31-87a9-5cbd-b766-95bc3eb8a897"
+                },
+                {
+                    "description": "过孔 [LCD_RS] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 28.448,
+                        "y": 3.048
+                    },
+                    "uuid": "f4a86a24-6801-5ba7-92e9-ea110dc54f56"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "过孔 [SPI_MOSI] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 31.496,
+                        "y": 5.08
+                    },
+                    "uuid": "a1a96569-6b02-5810-a027-890b32b1acca"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 19 [SPI_MOSI]",
+                    "pos": {
+                        "x": 31.242,
+                        "y": 5.334
+                    },
+                    "uuid": "e739e673-2d45-542d-8437-daf86cbbf4c1"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "过孔 [SPI_MISO] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 33.528,
+                        "y": 5.08
+                    },
+                    "uuid": "659daf45-89cf-5bea-a9fb-fa40005c11d0"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 21 [SPI_MISO]",
+                    "pos": {
+                        "x": 33.782,
+                        "y": 5.334
+                    },
+                    "uuid": "ec68b1dd-e167-56fb-9074-1a19f1ffae16"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J1 的PTH 焊盘 22 [LCD_RST]",
+                    "pos": {
+                        "x": 33.782,
+                        "y": 2.794
+                    },
+                    "uuid": "0345d01c-8ca0-5d12-9cc6-bc4a85a179e0"
+                },
+                {
+                    "description": "过孔 [LCD_RST] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 33.528,
+                        "y": 3.048
+                    },
+                    "uuid": "63bf5619-b220-5f8b-8f4e-884fc3133c30"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J1 的PTH 焊盘 23 [SPI_SCK]",
+                    "pos": {
+                        "x": 36.322,
+                        "y": 5.334
+                    },
+                    "uuid": "25dc69ce-2a76-5f39-84aa-8760ff1f4c71"
+                },
+                {
+                    "description": "过孔 [SPI_SCK] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 36.576,
+                        "y": 5.08
+                    },
+                    "uuid": "6faeef4b-87ba-5784-a79f-a4cca993e97b"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "过孔 [LCD_CS] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 36.576,
+                        "y": 3.048
+                    },
+                    "uuid": "50ee22b2-d43d-500b-b657-f04b4f893cf5"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 24 [LCD_CS]",
+                    "pos": {
+                        "x": 36.322,
+                        "y": 2.794
+                    },
+                    "uuid": "606e300d-9140-5376-85b5-fe60373302f2"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "过孔 [TP_CS] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 38.608,
+                        "y": 3.048
+                    },
+                    "uuid": "232ce048-b398-5b9b-97cd-93c732dc9459"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 26 [TP_CS]",
+                    "pos": {
+                        "x": 38.862,
+                        "y": 2.794
+                    },
+                    "uuid": "33d2c13d-cca2-59e2-8b1c-b461da646dcb"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "过孔 [PRIV_SENSE] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 43.688,
+                        "y": 5.08
+                    },
+                    "uuid": "2fd85f39-7dff-520a-99f3-1b2a8c2e2990"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 29 [PRIV_SENSE]",
+                    "pos": {
+                        "x": 43.942,
+                        "y": 5.334
+                    },
+                    "uuid": "5e5395dd-1899-5bec-bb34-c3e4bfe5fda2"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "过孔 [BUZZ_PWM] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 46.736,
+                        "y": 5.08
+                    },
+                    "uuid": "8dc99953-53a7-5730-bedf-ca415451103f"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 31 [BUZZ_PWM]",
+                    "pos": {
+                        "x": 46.482,
+                        "y": 5.334
+                    },
+                    "uuid": "b5bf5f78-893a-5e55-b395-01c4aa8c1ff3"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J1 的PTH 焊盘 32 [FAN_PWM]",
+                    "pos": {
+                        "x": 46.482,
+                        "y": 2.794
+                    },
+                    "uuid": "3db07be0-b6cf-52d7-b48e-b20752e2f3d5"
+                },
+                {
+                    "description": "过孔 [FAN_PWM] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 46.736,
+                        "y": 3.048
+                    },
+                    "uuid": "95d53633-83f0-5225-8ec8-0e2be765c4a4"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J1 的PTH 焊盘 33 [WS2812_3V3]",
+                    "pos": {
+                        "x": 49.022,
+                        "y": 5.334
+                    },
+                    "uuid": "0319a25f-b0dd-51b8-8d35-f6fe3da4bb29"
+                },
+                {
+                    "description": "过孔 [WS2812_3V3] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 49.276,
+                        "y": 5.08
+                    },
+                    "uuid": "cc14c35a-03d0-50db-aac7-feeda1fca6a3"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J1 的PTH 焊盘 35 [I2S_LRCLK]",
+                    "pos": {
+                        "x": 51.562,
+                        "y": 5.334
+                    },
+                    "uuid": "0576a31d-a320-5685-8085-96737cf0daef"
+                },
+                {
+                    "description": "过孔 [I2S_LRCLK] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 51.816,
+                        "y": 5.08
+                    },
+                    "uuid": "8279a7bc-407a-5f7b-8731-11dfa4166d3e"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "过孔 [I2S_DIN] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 53.848,
+                        "y": 3.048
+                    },
+                    "uuid": "3dfd5170-d959-5168-823e-669f423d7377"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 38 [I2S_DIN]",
+                    "pos": {
+                        "x": 54.102,
+                        "y": 2.794
+                    },
+                    "uuid": "e5147598-fd26-54b0-8f40-1f62b9a26d15"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "过孔 [I2S_DOUT] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 56.896,
+                        "y": 3.048
+                    },
+                    "uuid": "6d58f6ba-4d19-581f-940c-756a3045317f"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 40 [I2S_DOUT]",
+                    "pos": {
+                        "x": 56.642,
+                        "y": 2.794
+                    },
+                    "uuid": "88b4cbb1-f610-5859-9d3e-efcc7dc968ae"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "过孔 [WS2812_5V] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 64.008,
+                        "y": 42.164
+                    },
+                    "uuid": "5caa4606-5edf-597e-b7a6-cd6862f8692a"
+                },
+                {
+                    "description": "R8 的PTH 焊盘 2 [WS2812_5V]",
+                    "pos": {
+                        "x": 63.754,
+                        "y": 42.164
+                    },
+                    "uuid": "94d8eee7-d0d5-5f67-91b0-a2aaaae42dc9"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔的位置相同",
+            "items": [
+                {
+                    "description": "J10 的PTH 焊盘 2 [FAN_L]",
+                    "pos": {
+                        "x": 70.612,
+                        "y": 47.244
+                    },
+                    "uuid": "17f0209c-5765-564b-9057-fc4e565832ed"
+                },
+                {
+                    "description": "过孔 [FAN_L] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 70.612,
+                        "y": 47.244
+                    },
+                    "uuid": "4d030b1c-6760-5586-914e-bc75d1cdf7d0"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "钻孔的位置相同",
+            "items": [
+                {
+                    "description": "Q1 的PTH 焊盘 3 [FAN_L]",
+                    "pos": {
+                        "x": 73.66,
+                        "y": 40.132
+                    },
+                    "uuid": "7f71c0c9-463f-54bf-aac4-b36353ff5cc4"
+                },
+                {
+                    "description": "过孔 [FAN_L] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 73.66,
+                        "y": 40.132
+                    },
+                    "uuid": "8b99ac19-2b1e-5bb5-b612-f5d1149730ec"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "钻孔的位置相同",
+            "items": [
+                {
+                    "description": "过孔 [BUZZ_L] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 79.756,
+                        "y": 47.244
+                    },
+                    "uuid": "83b66ae3-420f-5ae5-9cd5-02d8bd187e90"
+                },
+                {
+                    "description": "J11 的PTH 焊盘 2 [BUZZ_L]",
+                    "pos": {
+                        "x": 79.756,
+                        "y": 47.244
+                    },
+                    "uuid": "e17ff347-17c6-5cc1-bc4a-1de4fc0707fc"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.1870 mm)",
+            "items": [
+                {
+                    "description": "过孔 [BUZZ_BASE] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 82.804,
+                        "y": 29.972
+                    },
+                    "uuid": "6506fd4e-5ccf-5bb2-84d4-e08a5f6c60ab"
+                },
+                {
+                    "description": "R4 的PTH 焊盘 2 [BUZZ_BASE]",
+                    "pos": {
+                        "x": 83.566,
+                        "y": 29.972
+                    },
+                    "uuid": "83c83eaf-fec8-59cd-af0d-d9119a3c29f9"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J1 的PTH 焊盘 1 [+3V3_RDK]",
+                    "pos": {
+                        "x": 8.382,
+                        "y": 5.334
+                    },
+                    "uuid": "71f93372-1c2f-5be9-9e32-aeaf8327e469"
+                },
+                {
+                    "description": "过孔 [+3V3_RDK] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 8.128,
+                        "y": 5.08
+                    },
+                    "uuid": "df563d54-c779-596d-9de4-7f3c86696ed7"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔的位置相同",
+            "items": [
+                {
+                    "description": "过孔 [V5_PROT] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 74.676,
+                        "y": 8.128
+                    },
+                    "uuid": "c467cdf8-f59d-58ea-afbb-e5c3a717f008"
+                },
+                {
+                    "description": "F1 的PTH 焊盘 2 [V5_PROT]",
+                    "pos": {
+                        "x": 74.676,
+                        "y": 8.128
+                    },
+                    "uuid": "cadb791f-41f0-532c-bfbf-81c3311cbacb"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "钻孔的位置相同",
+            "items": [
+                {
+                    "description": "D1 的PTH 焊盘 1 [V5_PROT]",
+                    "pos": {
+                        "x": 69.596,
+                        "y": 14.224
+                    },
+                    "uuid": "2399b157-860e-5f06-8762-dce4129eb8fd"
+                },
+                {
+                    "description": "过孔 [V5_PROT] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 69.596,
+                        "y": 14.224
+                    },
+                    "uuid": "2b12d630-6ff8-5216-83d2-401c5c60059b"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "钻孔的位置相同",
+            "items": [
+                {
+                    "description": "过孔 [V5_PROT] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 69.596,
+                        "y": 14.224
+                    },
+                    "uuid": "2b12d630-6ff8-5216-83d2-401c5c60059b"
+                },
+                {
+                    "description": "过孔 [V5_PROT] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 69.596,
+                        "y": 14.224
+                    },
+                    "uuid": "dfecbecc-584f-5b21-b537-ccdcf03b8ccb"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "钻孔的位置相同",
+            "items": [
+                {
+                    "description": "U1 的PTH 焊盘 3 [V5_PROT]",
+                    "pos": {
+                        "x": 74.676,
+                        "y": 20.828
+                    },
+                    "uuid": "ae00221f-f660-535d-8fa0-1f64c5625b51"
+                },
+                {
+                    "description": "过孔 [V5_PROT] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 74.676,
+                        "y": 20.828
+                    },
+                    "uuid": "c95aa3a2-c946-579a-b5e8-49c0c4134258"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "钻孔的位置相同",
+            "items": [
+                {
+                    "description": "D1 的PTH 焊盘 1 [V5_PROT]",
+                    "pos": {
+                        "x": 69.596,
+                        "y": 14.224
+                    },
+                    "uuid": "2399b157-860e-5f06-8762-dce4129eb8fd"
+                },
+                {
+                    "description": "过孔 [V5_PROT] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 69.596,
+                        "y": 14.224
+                    },
+                    "uuid": "dfecbecc-584f-5b21-b537-ccdcf03b8ccb"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "钻孔的位置相同",
+            "items": [
+                {
+                    "description": "过孔 [V5_PROT] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 68.072,
+                        "y": 47.244
+                    },
+                    "uuid": "195be6af-25a3-5f9d-8df0-dfa65285ad02"
+                },
+                {
+                    "description": "过孔 [V5_PROT] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 68.072,
+                        "y": 47.244
+                    },
+                    "uuid": "e94711e5-2ae2-5a08-8406-9d6b7ac881d7"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "钻孔的位置相同",
+            "items": [
+                {
+                    "description": "J10 的PTH 焊盘 1 [V5_PROT]",
+                    "pos": {
+                        "x": 68.072,
+                        "y": 47.244
+                    },
+                    "uuid": "2c8be753-8406-5c4b-b1ce-38c786f7da10"
+                },
+                {
+                    "description": "过孔 [V5_PROT] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 68.072,
+                        "y": 47.244
+                    },
+                    "uuid": "e94711e5-2ae2-5a08-8406-9d6b7ac881d7"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "钻孔的位置相同",
+            "items": [
+                {
+                    "description": "过孔 [V5_PROT] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 68.072,
+                        "y": 47.244
+                    },
+                    "uuid": "195be6af-25a3-5f9d-8df0-dfa65285ad02"
+                },
+                {
+                    "description": "J10 的PTH 焊盘 1 [V5_PROT]",
+                    "pos": {
+                        "x": 68.072,
+                        "y": 47.244
+                    },
+                    "uuid": "2c8be753-8406-5c4b-b1ce-38c786f7da10"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "R8 的PTH 焊盘 1 [V5_PROT]",
+                    "pos": {
+                        "x": 56.134,
+                        "y": 42.164
+                    },
+                    "uuid": "3b734272-92c6-5e95-8c24-090e7ec8607e"
+                },
+                {
+                    "description": "过孔 [V5_PROT] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 55.88,
+                        "y": 42.164
+                    },
+                    "uuid": "e8a5668a-9597-50f7-8237-0cf053c75270"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔的位置相同",
+            "items": [
+                {
+                    "description": "过孔 [V5_PROT] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 39.624,
+                        "y": 28.956
+                    },
+                    "uuid": "11d20d16-6a92-506b-9363-0bdb4754bc92"
+                },
+                {
+                    "description": "J6 的PTH 焊盘 2 [V5_PROT]",
+                    "pos": {
+                        "x": 39.624,
+                        "y": 28.956
+                    },
+                    "uuid": "58fc4af2-5827-5f74-a6f8-288ec56f6d4a"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "钻孔的位置相同",
+            "items": [
+                {
+                    "description": "过孔 [+3V3_EXT] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 59.944,
+                        "y": 36.068
+                    },
+                    "uuid": "6b41fd4e-f96f-533a-ab6d-37d7b256670f"
+                },
+                {
+                    "description": "Q3 的PTH 焊盘 2 [+3V3_EXT]",
+                    "pos": {
+                        "x": 59.944,
+                        "y": 36.068
+                    },
+                    "uuid": "d4416323-a706-5364-b08e-19ed182c12c8"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "钻孔的位置相同",
+            "items": [
+                {
+                    "description": "J7 的PTH 焊盘 2 [+3V3_EXT]",
+                    "pos": {
+                        "x": 23.368,
+                        "y": 47.244
+                    },
+                    "uuid": "7ec38f02-c485-507a-8f13-1d123ca8c7a9"
+                },
+                {
+                    "description": "过孔 [+3V3_EXT] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 23.368,
+                        "y": 47.244
+                    },
+                    "uuid": "ab310a41-bd94-5713-9dc0-dca5d8e0c5d1"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "钻孔的位置相同",
+            "items": [
+                {
+                    "description": "J7 的PTH 焊盘 1 [GND]",
+                    "pos": {
+                        "x": 20.828,
+                        "y": 47.244
+                    },
+                    "uuid": "22c2a29d-8d12-53d5-8957-7c7408f921e7"
+                },
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 20.828,
+                        "y": 47.244
+                    },
+                    "uuid": "9087f387-52e3-5aea-a01b-53ec35abaff7"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J1 的PTH 焊盘 1 [+3V3_RDK]",
+                    "pos": {
+                        "x": 8.382,
+                        "y": 5.334
+                    },
+                    "uuid": "71f93372-1c2f-5be9-9e32-aeaf8327e469"
+                },
+                {
+                    "description": "过孔 [+3V3_RDK] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 8.128,
+                        "y": 5.08
+                    },
+                    "uuid": "df563d54-c779-596d-9de4-7f3c86696ed7"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J1 的PTH 焊盘 3 [I2C_SDA]",
+                    "pos": {
+                        "x": 10.922,
+                        "y": 5.334
+                    },
+                    "uuid": "0ac50697-4edf-5929-881c-3adf423ee672"
+                },
+                {
+                    "description": "过孔 [I2C_SDA] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 11.176,
+                        "y": 5.08
+                    },
+                    "uuid": "a89ef04f-704f-540c-af3d-8a6203dc2434"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "过孔 [I2C_SCL] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 13.208,
+                        "y": 5.08
+                    },
+                    "uuid": "54e33f5f-ef60-53e8-922d-0d6ad3f53f6b"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 5 [I2C_SCL]",
+                    "pos": {
+                        "x": 13.462,
+                        "y": 5.334
+                    },
+                    "uuid": "828958a7-8a2d-5414-8c22-5c937eb19df7"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J1 的PTH 焊盘 7 [KILL_SW]",
+                    "pos": {
+                        "x": 16.002,
+                        "y": 5.334
+                    },
+                    "uuid": "0eb2423e-89b1-57c5-93d7-5d5d42a9d7e5"
+                },
+                {
+                    "description": "过孔 [KILL_SW] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 15.748,
+                        "y": 5.08
+                    },
+                    "uuid": "997d0e70-5470-56f0-a75a-ad0b90e5fc3c"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "过孔 [UART_TX] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 15.748,
+                        "y": 3.048
+                    },
+                    "uuid": "404dd753-bad3-508f-924e-f74fd74d646b"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 8 [UART_TX]",
+                    "pos": {
+                        "x": 16.002,
+                        "y": 2.794
+                    },
+                    "uuid": "eb638eb0-dcde-5a17-965d-0f48cf79c4e9"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J1 的PTH 焊盘 10 [UART_RX]",
+                    "pos": {
+                        "x": 18.542,
+                        "y": 2.794
+                    },
+                    "uuid": "b28876b2-d395-5b31-bc3c-8b03d9302819"
+                },
+                {
+                    "description": "过孔 [UART_RX] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 18.288,
+                        "y": 3.048
+                    },
+                    "uuid": "da7b8174-b4b4-52f2-a498-35a8c008b601"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "过孔 [TP_IRQ] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 21.336,
+                        "y": 5.08
+                    },
+                    "uuid": "369efa45-3938-5c34-b676-2a9f69c58266"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 11 [TP_IRQ]",
+                    "pos": {
+                        "x": 21.082,
+                        "y": 5.334
+                    },
+                    "uuid": "426c3924-7cb6-53e8-bcfc-43edf32c3444"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J1 的PTH 焊盘 12 [I2S_BCLK]",
+                    "pos": {
+                        "x": 21.082,
+                        "y": 2.794
+                    },
+                    "uuid": "117d0c24-5d36-51c8-ab81-f2156e3267da"
+                },
+                {
+                    "description": "过孔 [I2S_BCLK] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 21.336,
+                        "y": 3.048
+                    },
+                    "uuid": "a5c6dc9e-7ca5-5f1a-8a5a-600a01757232"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "过孔 [EC11_A] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 23.876,
+                        "y": 5.08
+                    },
+                    "uuid": "11789905-9981-5fdf-9361-a86e0179c4e1"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 13 [EC11_A]",
+                    "pos": {
+                        "x": 23.622,
+                        "y": 5.334
+                    },
+                    "uuid": "782e6a7c-f4d2-50a8-91c2-047f62e23234"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J1 的PTH 焊盘 15 [EC11_B]",
+                    "pos": {
+                        "x": 26.162,
+                        "y": 5.334
+                    },
+                    "uuid": "4271a696-f389-543c-b6c6-b02f81dec3ce"
+                },
+                {
+                    "description": "过孔 [EC11_B] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 26.416,
+                        "y": 5.08
+                    },
+                    "uuid": "4c667c47-75d1-507b-ab27-893caaea5ebf"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "过孔 [EC11_SW] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 26.416,
+                        "y": 3.048
+                    },
+                    "uuid": "4c3698d3-0cbd-5ca7-9474-3bd9d88c1d47"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 16 [EC11_SW]",
+                    "pos": {
+                        "x": 26.162,
+                        "y": 2.794
+                    },
+                    "uuid": "c84ced19-36dd-5325-ab45-4fe3cedb7a45"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J1 的PTH 焊盘 18 [LCD_RS]",
+                    "pos": {
+                        "x": 28.702,
+                        "y": 2.794
+                    },
+                    "uuid": "8a541a31-87a9-5cbd-b766-95bc3eb8a897"
+                },
+                {
+                    "description": "过孔 [LCD_RS] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 28.448,
+                        "y": 3.048
+                    },
+                    "uuid": "f4a86a24-6801-5ba7-92e9-ea110dc54f56"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "过孔 [SPI_MOSI] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 31.496,
+                        "y": 5.08
+                    },
+                    "uuid": "a1a96569-6b02-5810-a027-890b32b1acca"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 19 [SPI_MOSI]",
+                    "pos": {
+                        "x": 31.242,
+                        "y": 5.334
+                    },
+                    "uuid": "e739e673-2d45-542d-8437-daf86cbbf4c1"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "过孔 [SPI_MISO] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 33.528,
+                        "y": 5.08
+                    },
+                    "uuid": "659daf45-89cf-5bea-a9fb-fa40005c11d0"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 21 [SPI_MISO]",
+                    "pos": {
+                        "x": 33.782,
+                        "y": 5.334
+                    },
+                    "uuid": "ec68b1dd-e167-56fb-9074-1a19f1ffae16"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J1 的PTH 焊盘 22 [LCD_RST]",
+                    "pos": {
+                        "x": 33.782,
+                        "y": 2.794
+                    },
+                    "uuid": "0345d01c-8ca0-5d12-9cc6-bc4a85a179e0"
+                },
+                {
+                    "description": "过孔 [LCD_RST] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 33.528,
+                        "y": 3.048
+                    },
+                    "uuid": "63bf5619-b220-5f8b-8f4e-884fc3133c30"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J1 的PTH 焊盘 23 [SPI_SCK]",
+                    "pos": {
+                        "x": 36.322,
+                        "y": 5.334
+                    },
+                    "uuid": "25dc69ce-2a76-5f39-84aa-8760ff1f4c71"
+                },
+                {
+                    "description": "过孔 [SPI_SCK] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 36.576,
+                        "y": 5.08
+                    },
+                    "uuid": "6faeef4b-87ba-5784-a79f-a4cca993e97b"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "过孔 [LCD_CS] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 36.576,
+                        "y": 3.048
+                    },
+                    "uuid": "50ee22b2-d43d-500b-b657-f04b4f893cf5"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 24 [LCD_CS]",
+                    "pos": {
+                        "x": 36.322,
+                        "y": 2.794
+                    },
+                    "uuid": "606e300d-9140-5376-85b5-fe60373302f2"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "过孔 [TP_CS] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 38.608,
+                        "y": 3.048
+                    },
+                    "uuid": "232ce048-b398-5b9b-97cd-93c732dc9459"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 26 [TP_CS]",
+                    "pos": {
+                        "x": 38.862,
+                        "y": 2.794
+                    },
+                    "uuid": "33d2c13d-cca2-59e2-8b1c-b461da646dcb"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "过孔 [PRIV_SENSE] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 43.688,
+                        "y": 5.08
+                    },
+                    "uuid": "2fd85f39-7dff-520a-99f3-1b2a8c2e2990"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 29 [PRIV_SENSE]",
+                    "pos": {
+                        "x": 43.942,
+                        "y": 5.334
+                    },
+                    "uuid": "5e5395dd-1899-5bec-bb34-c3e4bfe5fda2"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "过孔 [BUZZ_PWM] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 46.736,
+                        "y": 5.08
+                    },
+                    "uuid": "8dc99953-53a7-5730-bedf-ca415451103f"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 31 [BUZZ_PWM]",
+                    "pos": {
+                        "x": 46.482,
+                        "y": 5.334
+                    },
+                    "uuid": "b5bf5f78-893a-5e55-b395-01c4aa8c1ff3"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J1 的PTH 焊盘 32 [FAN_PWM]",
+                    "pos": {
+                        "x": 46.482,
+                        "y": 2.794
+                    },
+                    "uuid": "3db07be0-b6cf-52d7-b48e-b20752e2f3d5"
+                },
+                {
+                    "description": "过孔 [FAN_PWM] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 46.736,
+                        "y": 3.048
+                    },
+                    "uuid": "95d53633-83f0-5225-8ec8-0e2be765c4a4"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J1 的PTH 焊盘 33 [WS2812_3V3]",
+                    "pos": {
+                        "x": 49.022,
+                        "y": 5.334
+                    },
+                    "uuid": "0319a25f-b0dd-51b8-8d35-f6fe3da4bb29"
+                },
+                {
+                    "description": "过孔 [WS2812_3V3] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 49.276,
+                        "y": 5.08
+                    },
+                    "uuid": "cc14c35a-03d0-50db-aac7-feeda1fca6a3"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J1 的PTH 焊盘 35 [I2S_LRCLK]",
+                    "pos": {
+                        "x": 51.562,
+                        "y": 5.334
+                    },
+                    "uuid": "0576a31d-a320-5685-8085-96737cf0daef"
+                },
+                {
+                    "description": "过孔 [I2S_LRCLK] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 51.816,
+                        "y": 5.08
+                    },
+                    "uuid": "8279a7bc-407a-5f7b-8731-11dfa4166d3e"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "过孔 [I2S_DIN] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 53.848,
+                        "y": 3.048
+                    },
+                    "uuid": "3dfd5170-d959-5168-823e-669f423d7377"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 38 [I2S_DIN]",
+                    "pos": {
+                        "x": 54.102,
+                        "y": 2.794
+                    },
+                    "uuid": "e5147598-fd26-54b0-8f40-1f62b9a26d15"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "过孔 [I2S_DOUT] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 56.896,
+                        "y": 3.048
+                    },
+                    "uuid": "6d58f6ba-4d19-581f-940c-756a3045317f"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 40 [I2S_DOUT]",
+                    "pos": {
+                        "x": 56.642,
+                        "y": 2.794
+                    },
+                    "uuid": "88b4cbb1-f610-5859-9d3e-efcc7dc968ae"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔的位置相同",
+            "items": [
+                {
+                    "description": "过孔 [V5_PROT] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 74.676,
+                        "y": 8.128
+                    },
+                    "uuid": "c467cdf8-f59d-58ea-afbb-e5c3a717f008"
+                },
+                {
+                    "description": "F1 的PTH 焊盘 2 [V5_PROT]",
+                    "pos": {
+                        "x": 74.676,
+                        "y": 8.128
+                    },
+                    "uuid": "cadb791f-41f0-532c-bfbf-81c3311cbacb"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "钻孔的位置相同",
+            "items": [
+                {
+                    "description": "D1 的PTH 焊盘 1 [V5_PROT]",
+                    "pos": {
+                        "x": 69.596,
+                        "y": 14.224
+                    },
+                    "uuid": "2399b157-860e-5f06-8762-dce4129eb8fd"
+                },
+                {
+                    "description": "过孔 [V5_PROT] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 69.596,
+                        "y": 14.224
+                    },
+                    "uuid": "2b12d630-6ff8-5216-83d2-401c5c60059b"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "钻孔的位置相同",
+            "items": [
+                {
+                    "description": "D1 的PTH 焊盘 1 [V5_PROT]",
+                    "pos": {
+                        "x": 69.596,
+                        "y": 14.224
+                    },
+                    "uuid": "2399b157-860e-5f06-8762-dce4129eb8fd"
+                },
+                {
+                    "description": "过孔 [V5_PROT] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 69.596,
+                        "y": 14.224
+                    },
+                    "uuid": "dfecbecc-584f-5b21-b537-ccdcf03b8ccb"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "钻孔的位置相同",
+            "items": [
+                {
+                    "description": "U1 的PTH 焊盘 3 [V5_PROT]",
+                    "pos": {
+                        "x": 74.676,
+                        "y": 20.828
+                    },
+                    "uuid": "ae00221f-f660-535d-8fa0-1f64c5625b51"
+                },
+                {
+                    "description": "过孔 [V5_PROT] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 74.676,
+                        "y": 20.828
+                    },
+                    "uuid": "c95aa3a2-c946-579a-b5e8-49c0c4134258"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "钻孔的位置相同",
+            "items": [
+                {
+                    "description": "过孔 [V5_PROT] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 39.624,
+                        "y": 28.956
+                    },
+                    "uuid": "11d20d16-6a92-506b-9363-0bdb4754bc92"
+                },
+                {
+                    "description": "J6 的PTH 焊盘 2 [V5_PROT]",
+                    "pos": {
+                        "x": 39.624,
+                        "y": 28.956
+                    },
+                    "uuid": "58fc4af2-5827-5f74-a6f8-288ec56f6d4a"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "钻孔的位置相同",
+            "items": [
+                {
+                    "description": "J7 的PTH 焊盘 1 [GND]",
+                    "pos": {
+                        "x": 20.828,
+                        "y": 47.244
+                    },
+                    "uuid": "22c2a29d-8d12-53d5-8957-7c7408f921e7"
+                },
+                {
+                    "description": "过孔 [GND] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 20.828,
+                        "y": 47.244
+                    },
+                    "uuid": "9087f387-52e3-5aea-a01b-53ec35abaff7"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "钻孔的位置相同",
+            "items": [
+                {
+                    "description": "J7 的PTH 焊盘 2 [+3V3_EXT]",
+                    "pos": {
+                        "x": 23.368,
+                        "y": 47.244
+                    },
+                    "uuid": "7ec38f02-c485-507a-8f13-1d123ca8c7a9"
+                },
+                {
+                    "description": "过孔 [+3V3_EXT] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 23.368,
+                        "y": 47.244
+                    },
+                    "uuid": "ab310a41-bd94-5713-9dc0-dca5d8e0c5d1"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "R6 的PTH 焊盘 2 [EC11_A]",
+                    "pos": {
+                        "x": 34.798,
+                        "y": 36.068
+                    },
+                    "uuid": "555dcdfc-8011-5f0c-9d8f-5a5b21f5e70d"
+                },
+                {
+                    "description": "过孔 [EC11_A] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 34.544,
+                        "y": 36.068
+                    },
+                    "uuid": "8e7e2de8-23c4-56ae-a31d-95e25ce2fee0"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔的位置相同",
+            "items": [
+                {
+                    "description": "过孔 [KILL_SW] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 39.624,
+                        "y": 47.244
+                    },
+                    "uuid": "57df7f0a-8460-55ce-a83b-846446e11eff"
+                },
+                {
+                    "description": "J8 的PTH 焊盘 2 [KILL_SW]",
+                    "pos": {
+                        "x": 39.624,
+                        "y": 47.244
+                    },
+                    "uuid": "eb9cf801-6755-5b51-b724-26e9fe3e107d"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "C4 的PTH 焊盘 1 [KILL_SW]",
+                    "pos": {
+                        "x": 49.022,
+                        "y": 41.148
+                    },
+                    "uuid": "386712f0-a5b2-5e27-a195-be4760241d18"
+                },
+                {
+                    "description": "过孔 [KILL_SW] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 48.768,
+                        "y": 41.148
+                    },
+                    "uuid": "7b7b6e56-fe43-58f0-a639-f0c1fe84621c"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔的位置相同",
+            "items": [
+                {
+                    "description": "过孔 [+3V3_EXT] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 59.944,
+                        "y": 36.068
+                    },
+                    "uuid": "6b41fd4e-f96f-533a-ab6d-37d7b256670f"
+                },
+                {
+                    "description": "Q3 的PTH 焊盘 2 [+3V3_EXT]",
+                    "pos": {
+                        "x": 59.944,
+                        "y": 36.068
+                    },
+                    "uuid": "d4416323-a706-5364-b08e-19ed182c12c8"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "R8 的PTH 焊盘 1 [V5_PROT]",
+                    "pos": {
+                        "x": 56.134,
+                        "y": 42.164
+                    },
+                    "uuid": "3b734272-92c6-5e95-8c24-090e7ec8607e"
+                },
+                {
+                    "description": "过孔 [V5_PROT] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 55.88,
+                        "y": 42.164
+                    },
+                    "uuid": "e8a5668a-9597-50f7-8237-0cf053c75270"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "过孔 [WS2812_5V] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 64.008,
+                        "y": 42.164
+                    },
+                    "uuid": "5caa4606-5edf-597e-b7a6-cd6862f8692a"
+                },
+                {
+                    "description": "R8 的PTH 焊盘 2 [WS2812_5V]",
+                    "pos": {
+                        "x": 63.754,
+                        "y": 42.164
+                    },
+                    "uuid": "94d8eee7-d0d5-5f67-91b0-a2aaaae42dc9"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "钻孔的位置相同",
+            "items": [
+                {
+                    "description": "J10 的PTH 焊盘 1 [V5_PROT]",
+                    "pos": {
+                        "x": 68.072,
+                        "y": 47.244
+                    },
+                    "uuid": "2c8be753-8406-5c4b-b1ce-38c786f7da10"
+                },
+                {
+                    "description": "过孔 [V5_PROT] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 68.072,
+                        "y": 47.244
+                    },
+                    "uuid": "e94711e5-2ae2-5a08-8406-9d6b7ac881d7"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "钻孔的位置相同",
+            "items": [
+                {
+                    "description": "过孔 [V5_PROT] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 68.072,
+                        "y": 47.244
+                    },
+                    "uuid": "195be6af-25a3-5f9d-8df0-dfa65285ad02"
+                },
+                {
+                    "description": "J10 的PTH 焊盘 1 [V5_PROT]",
+                    "pos": {
+                        "x": 68.072,
+                        "y": 47.244
+                    },
+                    "uuid": "2c8be753-8406-5c4b-b1ce-38c786f7da10"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "钻孔的位置相同",
+            "items": [
+                {
+                    "description": "J10 的PTH 焊盘 2 [FAN_L]",
+                    "pos": {
+                        "x": 70.612,
+                        "y": 47.244
+                    },
+                    "uuid": "17f0209c-5765-564b-9057-fc4e565832ed"
+                },
+                {
+                    "description": "过孔 [FAN_L] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 70.612,
+                        "y": 47.244
+                    },
+                    "uuid": "4d030b1c-6760-5586-914e-bc75d1cdf7d0"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "钻孔的位置相同",
+            "items": [
+                {
+                    "description": "Q1 的PTH 焊盘 3 [FAN_L]",
+                    "pos": {
+                        "x": 73.66,
+                        "y": 40.132
+                    },
+                    "uuid": "7f71c0c9-463f-54bf-aac4-b36353ff5cc4"
+                },
+                {
+                    "description": "过孔 [FAN_L] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 73.66,
+                        "y": 40.132
+                    },
+                    "uuid": "8b99ac19-2b1e-5bb5-b612-f5d1149730ec"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "钻孔的位置相同",
+            "items": [
+                {
+                    "description": "过孔 [BUZZ_L] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 79.756,
+                        "y": 47.244
+                    },
+                    "uuid": "83b66ae3-420f-5ae5-9cd5-02d8bd187e90"
+                },
+                {
+                    "description": "J11 的PTH 焊盘 2 [BUZZ_L]",
+                    "pos": {
+                        "x": 79.756,
+                        "y": 47.244
+                    },
+                    "uuid": "e17ff347-17c6-5cc1-bc4a-1de4fc0707fc"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (board setup constraints 最小 0.2495 mm; 实际 0.1870 mm)",
+            "items": [
+                {
+                    "description": "过孔 [BUZZ_BASE] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 82.804,
+                        "y": 29.972
+                    },
+                    "uuid": "6506fd4e-5ccf-5bb2-84d4-e08a5f6c60ab"
+                },
+                {
+                    "description": "R4 的PTH 焊盘 2 [BUZZ_BASE]",
+                    "pos": {
+                        "x": 83.566,
+                        "y": 29.972
+                    },
+                    "uuid": "83c83eaf-fec8-59cd-af0d-d9119a3c29f9"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "当前配置不包含封装库 'MountingHole'。",
+            "items": [
+                {
+                    "description": "封装 H1",
+                    "pos": {
+                        "x": 3.5,
+                        "y": 3.5
+                    },
+                    "uuid": "857006aa-20e8-5199-bf9f-d08a8aa6ac46"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'MountingHole'。",
+            "items": [
+                {
+                    "description": "封装 H2",
+                    "pos": {
+                        "x": 61.5,
+                        "y": 3.5
+                    },
+                    "uuid": "cada921f-67ec-5ad5-b8bc-34673c8a1b3d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'MountingHole'。",
+            "items": [
+                {
+                    "description": "封装 H3",
+                    "pos": {
+                        "x": 3.5,
+                        "y": 52.5
+                    },
+                    "uuid": "3d212668-5af2-50a3-b4d9-62c98c595e92"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'MountingHole'。",
+            "items": [
+                {
+                    "description": "封装 H4",
+                    "pos": {
+                        "x": 61.5,
+                        "y": 52.5
+                    },
+                    "uuid": "4f02ed69-5736-565a-97ad-6dc195f3d5d2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'Connector_PinSocket_2.54mm'。",
+            "items": [
+                {
+                    "description": "封装 J1",
+                    "pos": {
+                        "x": 32.512,
+                        "y": 4.064
+                    },
+                    "uuid": "00834442-bee1-5a62-abc2-55a6b432eb73"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'Connector_PinHeader_2.54mm'。",
+            "items": [
+                {
+                    "description": "封装 J2",
+                    "pos": {
+                        "x": 25.908,
+                        "y": 18.796
+                    },
+                    "uuid": "aeca8a81-d254-5cf4-a891-7c55f244d98b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'Fuse'。",
+            "items": [
+                {
+                    "description": "封装 F1",
+                    "pos": {
+                        "x": 72.136,
+                        "y": 8.128
+                    },
+                    "uuid": "03ba0886-9817-5685-aa03-469af93fdb7d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'Diode_THT'。",
+            "items": [
+                {
+                    "description": "封装 D1",
+                    "pos": {
+                        "x": 72.136,
+                        "y": 14.224
+                    },
+                    "uuid": "3645858a-1d11-5156-a431-8b0367cae602"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'Package_TO_SOT_THT'。",
+            "items": [
+                {
+                    "description": "封装 U1",
+                    "pos": {
+                        "x": 72.136,
+                        "y": 20.828
+                    },
+                    "uuid": "28f71203-948e-5711-880e-c6f41aedd088"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'Capacitor_THT'。",
+            "items": [
+                {
+                    "description": "封装 C1",
+                    "pos": {
+                        "x": 60.96,
+                        "y": 14.224
+                    },
+                    "uuid": "ba887049-fe78-58cd-ad04-f30da68fd77f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'Capacitor_THT'。",
+            "items": [
+                {
+                    "description": "封装 C2",
+                    "pos": {
+                        "x": 60.96,
+                        "y": 19.812
+                    },
+                    "uuid": "f9472377-152b-58b3-9a85-d8e632fcd922"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'Capacitor_THT'。",
+            "items": [
+                {
+                    "description": "封装 C3",
+                    "pos": {
+                        "x": 60.96,
+                        "y": 24.892
+                    },
+                    "uuid": "eabba044-b905-5b84-9f0d-6c43111ec5ed"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'Connector_PinHeader_2.54mm'。",
+            "items": [
+                {
+                    "description": "封装 J3",
+                    "pos": {
+                        "x": 10.16,
+                        "y": 47.244
+                    },
+                    "uuid": "2712a9ae-0cf3-588d-b06d-70df436b8ef5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'Resistor_THT'。",
+            "items": [
+                {
+                    "description": "封装 R1",
+                    "pos": {
+                        "x": 10.16,
+                        "y": 38.1
+                    },
+                    "uuid": "35019560-0de6-5d5e-8df5-8648f31f22a3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'LED_THT'。",
+            "items": [
+                {
+                    "description": "封装 D2",
+                    "pos": {
+                        "x": 20.828,
+                        "y": 38.1
+                    },
+                    "uuid": "db736913-e304-5f4d-b707-457e52061061"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'Connector_PinHeader_2.54mm'。",
+            "items": [
+                {
+                    "description": "封装 J4",
+                    "pos": {
+                        "x": 8.128,
+                        "y": 28.956
+                    },
+                    "uuid": "5bfddeb0-e2d0-5438-bd43-8a02af5d5f45"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'Connector_PinHeader_2.54mm'。",
+            "items": [
+                {
+                    "description": "封装 J5",
+                    "pos": {
+                        "x": 21.844,
+                        "y": 28.956
+                    },
+                    "uuid": "f555d2ec-f3bb-5007-b6f2-bde8c09b9861"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'Connector_PinHeader_2.54mm'。",
+            "items": [
+                {
+                    "description": "封装 J6",
+                    "pos": {
+                        "x": 37.084,
+                        "y": 28.956
+                    },
+                    "uuid": "5e3fa258-6e9f-5f1d-9b23-0333d3e30248"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'Connector_PinHeader_2.54mm'。",
+            "items": [
+                {
+                    "description": "封装 J7",
+                    "pos": {
+                        "x": 20.828,
+                        "y": 47.244
+                    },
+                    "uuid": "0a0834e9-3c06-518c-9924-28f8d277e190"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'Resistor_THT'。",
+            "items": [
+                {
+                    "description": "封装 R6",
+                    "pos": {
+                        "x": 30.988,
+                        "y": 36.068
+                    },
+                    "uuid": "5f16286d-502d-56fe-bf54-277d13df63e8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'Resistor_THT'。",
+            "items": [
+                {
+                    "description": "封装 R7",
+                    "pos": {
+                        "x": 30.988,
+                        "y": 41.148
+                    },
+                    "uuid": "e1cf1e72-e515-579b-af09-edbcde2938f2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'Capacitor_THT'。",
+            "items": [
+                {
+                    "description": "封装 C5",
+                    "pos": {
+                        "x": 41.148,
+                        "y": 36.068
+                    },
+                    "uuid": "bdffbd5e-fcba-5123-98df-695f1b4190e4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'Capacitor_THT'。",
+            "items": [
+                {
+                    "description": "封装 C6",
+                    "pos": {
+                        "x": 41.148,
+                        "y": 41.148
+                    },
+                    "uuid": "94bf49e9-67ed-5fb3-9724-527e0bed77e0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'Connector_PinHeader_2.54mm'。",
+            "items": [
+                {
+                    "description": "封装 J8",
+                    "pos": {
+                        "x": 37.084,
+                        "y": 47.244
+                    },
+                    "uuid": "b9297f7f-c291-5d89-b05c-ee0abcfe9d13"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'Resistor_THT'。",
+            "items": [
+                {
+                    "description": "封装 R2",
+                    "pos": {
+                        "x": 50.292,
+                        "y": 36.068
+                    },
+                    "uuid": "17fab5db-20fb-52e7-8d23-8b28dc47e33b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'Capacitor_THT'。",
+            "items": [
+                {
+                    "description": "封装 C4",
+                    "pos": {
+                        "x": 50.292,
+                        "y": 41.148
+                    },
+                    "uuid": "c2d71e40-59ac-5a75-a20a-c691b1a69c79"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'Package_TO_SOT_THT'。",
+            "items": [
+                {
+                    "description": "封装 Q3",
+                    "pos": {
+                        "x": 59.944,
+                        "y": 36.068
+                    },
+                    "uuid": "7997dae7-51ef-5bd3-8a3c-9d9765d059e9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'Resistor_THT'。",
+            "items": [
+                {
+                    "description": "封装 R8",
+                    "pos": {
+                        "x": 59.944,
+                        "y": 42.164
+                    },
+                    "uuid": "120f2f8a-6457-5c3e-8c49-2ddcb8574cae"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'Connector_PinHeader_2.54mm'。",
+            "items": [
+                {
+                    "description": "封装 J9",
+                    "pos": {
+                        "x": 46.228,
+                        "y": 47.244
+                    },
+                    "uuid": "aab04434-f4a1-512a-abd6-d55f11aa1151"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'Connector_PinHeader_2.54mm'。",
+            "items": [
+                {
+                    "description": "封装 J10",
+                    "pos": {
+                        "x": 68.072,
+                        "y": 47.244
+                    },
+                    "uuid": "a66c2d00-fae7-5c6c-b31c-82b9237f3cd2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'Resistor_THT'。",
+            "items": [
+                {
+                    "description": "封装 R3",
+                    "pos": {
+                        "x": 69.596,
+                        "y": 34.036
+                    },
+                    "uuid": "80fa55d4-b819-5c10-babc-020acaa8ac13"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'Package_TO_SOT_THT'。",
+            "items": [
+                {
+                    "description": "封装 Q1",
+                    "pos": {
+                        "x": 71.12,
+                        "y": 40.132
+                    },
+                    "uuid": "1e799862-bac8-534f-8a06-c78358dbbc22"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'Diode_THT'。",
+            "items": [
+                {
+                    "description": "封装 D3",
+                    "pos": {
+                        "x": 72.136,
+                        "y": 27.94
+                    },
+                    "uuid": "5eedbc68-6d12-52c1-a50a-038bb3fe20ed"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'Connector_PinHeader_2.54mm'。",
+            "items": [
+                {
+                    "description": "封装 J11",
+                    "pos": {
+                        "x": 77.216,
+                        "y": 47.244
+                    },
+                    "uuid": "ea9c1ac0-5a1e-57ce-8d60-9c511280d258"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'Resistor_THT'。",
+            "items": [
+                {
+                    "description": "封装 R4",
+                    "pos": {
+                        "x": 79.756,
+                        "y": 29.972
+                    },
+                    "uuid": "de00face-2f0f-518c-b7e0-8a01e7067ec5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置不包含封装库 'Package_TO_SOT_THT'。",
+            "items": [
+                {
+                    "description": "封装 Q2",
+                    "pos": {
+                        "x": 80.772,
+                        "y": 40.132
+                    },
+                    "uuid": "f6bc9853-6632-513c-8736-0678b6b8d266"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        }
+    ]
+}

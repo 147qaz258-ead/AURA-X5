@@ -1,0 +1,26 @@
+/**:
+  ros__parameters:
+    # BPU Perception Node
+    bpu_model_path: "/app/multimedia_samples/sunrise_camera/Platform/x5/model_zoom/mobilenetv2_224x224_nv12.bin"
+    bpu_continuous_hz: 15.0
+    bpu_metrics_hz: 2.0
+    thermal_warn_c: 75.0
+
+    # Sensor Node
+    telemetry_hz: 2.0
+    radar_hz: 5.0
+    kill_switch_poll_hz: 20.0
+    radar_uart_device: "/dev/ttyS1"
+    radar_baud: 256000
+
+    # Safety Gate Node
+    proposal_ttl_sec: 120.0
+    max_sync_skew_ms: 500.0
+    hid_keyboard_device: "/dev/hidg0"
+
+    # Actuator & UI Bridge Node
+    http_ui_port: 8080
+    ws_port: 8765
+    fan_min_duty_pct: 35
+    fan_high_temp_c: 60.0
+    fan_max_duty_pct: 100

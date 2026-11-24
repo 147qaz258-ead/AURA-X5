@@ -1,0 +1,12 @@
+{
+  "revision": "EVT-B",
+  "parts_count": 32,
+  "pads_count": 147,
+  "nets_count": 36,
+  "tracks_count": 3995,
+  "vias_count": 69,
+  "unrouted_internal": [],
+  "kicad_drc_errors": 0,
+  "kicad_unconnected": 0,
+  "kicad_drc_ok": true
+}
