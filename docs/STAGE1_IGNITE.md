@@ -79,5 +79,5 @@ BPU_INFER_MS: <measured_ms> Outputs: {...}
 | 2 | Sensor / peripheral photo or clip | Pending capture | `docs/evidence/stage1/02_sensor_peripheral.jpg` |
 | 3 | On-device AI task screenshot | Pending capture | `docs/evidence/stage1/03_first_ai_bpu.png` |
 | 4 | Personal GitHub repo README | Ready | [`README.md`](../README.md) |
-| 5 | Discord Stage 1 check-in link | Pending post | `<paste-discord-permalink>` |
+| 5 | Discord Stage 1 check-in link | Active thread | https://discord.com/channels/1300358874280230994/1569684675004334110 |
 | 6 | Official Showcase PR | Draft ready | [`showcase_pr/ParticipantName-Project-AURA-X5.md`](../showcase_pr/ParticipantName-Project-AURA-X5.md) |
