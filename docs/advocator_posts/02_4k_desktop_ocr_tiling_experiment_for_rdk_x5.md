@@ -1,12 +1,15 @@
 # 4K 桌面做中文 OCR 为什么准确率跌到 12%？面向 D-Robotics RDK X5 640×640 BPU 输入的缩放与切片量化实测
 
+![封面图：4K 桌面 OCR 缩放崩坏 vs 640×640 BPU 切片实测](./covers/cover_02_4k_ocr_tiling.jpg)
+
 > 本文为 **D-Robotics（地瓜机器人）Robotics Dream Keeper Challenge — 2026 Winter** 工程前置实验复盘（第 2 篇）。  
 > - 官方赛事仓库：[D-Robotics/Robotics-Dream-Keeper-Challenge-Winter](https://github.com/D-Robotics/Robotics-Dream-Keeper-Challenge-Winter)  
 > - RDK Model Zoo：[https://github.com/D-Robotics/rdk_model_zoo](https://github.com/D-Robotics/rdk_model_zoo)  
 > - AURA-X5 项目开源仓库：[https://github.com/147qaz258-ead/AURA-X5](https://github.com/147qaz258-ead/AURA-X5)
 
 > **配图建议（发布时直接上传）：**  
-> 1. 缩放画质对比实测图：`aura_x5/docs/evidence/prework/scale-comparison.png`
+> 1. 16:9 专属封面图：`aura_x5/docs/advocator_posts/covers/cover_02_4k_ocr_tiling.jpg`  
+> 2. 缩放画质对比实测图：`aura_x5/docs/evidence/prework/scale-comparison.png`
 
 ---
 

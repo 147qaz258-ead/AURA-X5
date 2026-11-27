@@ -1,13 +1,16 @@
 # 为什么纯软件桌面 Agent 不够？我用 D-Robotics RDK X5 造一台带物理隐私开关的具身“第二大脑”
 
+![封面图：AURA-X5 桌面具身主动式 AI 协作者](./covers/cover_01_aura_x5_overview.jpg)
+
 > 本文为参加 **D-Robotics（地瓜机器人）Robotics Dream Keeper Challenge — 2026 Winter**（RDK 冬季挑战赛）的开源工程实录第 1 篇。  
 > - 官方赛事仓库：[D-Robotics/Robotics-Dream-Keeper-Challenge-Winter](https://github.com/D-Robotics/Robotics-Dream-Keeper-Challenge-Winter)  
 > - D-Robotics 开发者文档：[https://developer.d-robotics.cc/en/documentation](https://developer.d-robotics.cc/en/documentation)  
 > - 本项目完整开源仓库（含 ROS 2 / KiCad PCB / 3D 打印外壳）：[https://github.com/147qaz258-ead/AURA-X5](https://github.com/147qaz258-ead/AURA-X5)
 
 > **配图建议（发布平台上传时直接选用仓库内实图）：**  
-> 1. 封面 / 结构渲染图：`aura_x5/mechanical/cad_preview.png`  
-> 2. 定制扩展板 3D 图：`aura_x5/electronics/pcb_3d_top.png`
+> 1. 16:9 专属封面图：`aura_x5/docs/advocator_posts/covers/cover_01_aura_x5_overview.jpg`  
+> 2. 实体蓝发双目原型 & RDK X5 实拍：`aura_x5/docs/evidence/stage1/02b_embodied_dual_eye_prototype.jpg`、`02a_rdk_x5_hardware_bringup.jpg`  
+> 3. 结构与定制载板 3D 图：`aura_x5/mechanical/cad_preview.png`、`aura_x5/electronics/pcb_3d_top.png`
 
 ---
 

@@ -1,13 +1,15 @@
 # 从 KiCad 0 DRC 报错到免焊 60 FPS HDMI：给 D-Robotics RDK X5 设计桌面具身 AI 终端的双路线硬件实战
 
+![封面图：KiCad 定制载板 HAT vs 免焊 60 FPS HDMI 双路线硬件](./covers/cover_03_dual_track_hardware.jpg)
+
 > 本文为 **D-Robotics（地瓜机器人）Robotics Dream Keeper Challenge — 2026 Winter** 硬件工程分享（第 3 篇）。  
 > - 官方赛事仓库：[D-Robotics/Robotics-Dream-Keeper-Challenge-Winter](https://github.com/D-Robotics/Robotics-Dream-Keeper-Challenge-Winter)  
 > - D-Robotics 开发者文档：[https://developer.d-robotics.cc/en/documentation](https://developer.d-robotics.cc/en/documentation)  
 > - 本项目完整 KiCad 工程 / Gerber / BOM / 3D STL 开源仓库：[https://github.com/147qaz258-ead/AURA-X5](https://github.com/147qaz258-ead/AURA-X5)
 
 > **配图建议（发布时直接上传）：**  
-> 1. 定制载板 3D 渲染图：`aura_x5/electronics/pcb_3d_top.png`  
-> 2. 定制载板 2D 布线预览图：`aura_x5/electronics/pcb_preview.png`  
+> 1. 16:9 专属封面图：`aura_x5/docs/advocator_posts/covers/cover_03_dual_track_hardware.jpg`  
+> 2. 定制载板 3D 与 2D 预览图：`aura_x5/electronics/pcb_3d_top.png`、`aura_x5/electronics/pcb_preview.png`  
 > 3. 15° 控制台 3D 外壳装配渲染图：`aura_x5/mechanical/cad_preview.png`
 
 ---
